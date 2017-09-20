@@ -5,14 +5,40 @@
   },
   "apps": [
     {
+      "name": "app1",
       "root": "src",
       "outDir": "dist",
       "assets": [
         "assets",
         "favicon.ico"
       ],
-      "index": "index.html",
-      "main": "main.ts",
+      "index": "app1/index.html",
+      "main": "app1/main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "app2",
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "app2/index.html",
+      "main": "app2/main.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
